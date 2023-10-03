@@ -58,6 +58,7 @@ footer{
     .footer-logo p{
         text-align: right;
         font-size: 14px;
+        display: inline;
    
     }
     .icon-fb svg, .icon-yt svg, .icon-mail svg{

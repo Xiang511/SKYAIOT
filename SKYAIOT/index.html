@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sky AIOT</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="">
@@ -21,66 +22,95 @@
     <!-- font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&family=Kanit&display=swap');
+        *{
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Kanit', sans-serif;
+        }
     </style>
      <!-- font -->
+
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- animate -->
+
+    <!-- fb.ig.twitter -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fb.ig.twitter -->
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
-
-
+    
+    
 
 
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-white ">
-            <div class="container-fluid " id="Navwidth">
-              <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="Logo"  class="d-inline-block align-text-top logo">
-                </a>
-                <span>
-                    Sky AIOT
-                </span>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav" id="nav">
-                        <li class="nav-item">
-                            <a class="nav-link " href="index.html">Homepage</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Distinctive Field
-                            </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Smart Agriculture</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item " href="#">Smart Livestock Farming</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item " href="#">Smart Aquaculture</a></li>
-                                </ul>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Patent</a>
-                        </li>
-                    </ul>
+        <a href="#" class="brand"><img src="img/logo.png" style="width: 35px;height: 35px;margin-right: 6px;" alt="">SKY AIOT</a>
+        <div class="menu-btn">
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="index.html">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Distinctive Field</a>
+                    <a href="#">Product</a>
+                    <a href="patents.html">Patents</a>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <div class="wrap">
+    <section class="home">
+        <img class="img-slide active" src="https://picsum.photos/1280/720/?random=10" >
+        <img class="img-slide" src="https://picsum.photos/1280/720/?random=9" >
+        <img class="img-slide" src="https://picsum.photos/1280/720/?random=8" >
+        <img class="img-slide" src="https://picsum.photos/1280/720/?random=7" >
+        <div class="content active">
+            <h1>SKY</br><span>AIOT</span></h1>
+            <p></p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Smart</br><span>Agriculture</span></h1>
+            <p></p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Smart</br><span>Livestock Farming</span></h1>
+            <p></p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Smart</br><span>Aquaculture</span></h1>
+            <p></p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/skyaiot/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@user-rg9jl5rj8g"><i class="fa fa-youtube-play"></i></a>
+            <address>
+                 <a href="mailto:aiot@skyvillagecoffee.com"><i class="fa fa-envelope"></i></a>
+            </address>
+           
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
 
-        <seation class="carousel" >
+
+        
+    </section>
+
+    <div class="wrap">
+        
+        <!-- <seation class="carousel" >
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -89,21 +119,45 @@
                 </div>
                 <div class="carousel-inner" id="carousel-inner">
                   <div class="carousel-item active">
+                   
                     <img src="https://picsum.photos/1200/400/?random=10" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="https://picsum.photos/1200/400/?random=15" class="d-block w-100" alt="...">
+                    <img src="https://picsum.photos/1200/400/?random=11" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="https://picsum.photos/1200/400/?random=16" class="d-block w-100" alt="...">
+                    <img src="https://picsum.photos/1200/400/?random=12" class="d-block w-100" alt="...">
                   </div>
                 </div>
                
               </div>
-        </seation>
+        </seation> -->
+        <!-- https://picsum.photos/1200/400/?random=10 -->
+
+        <section class="DistinctiveField reveal">
+            <div class="aboutus-item" id="Distinctive">
+                <div class="txt">
+                    <h1>Distinctive Field</h1>
+                </div>
+                <div class="aboutus-card-item">
+                    <div class="txt">
+                        <h4>Developed a groundbreaking smart agriculture IoT system that integrates artificial intelligence, big data analytics, and remote control technology, establishing expertise as a smart agriculture specialist with multiple patented innovations.</h4>
+                        <!-- <div class="grow"></div> -->
+                    
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
         
         <section class="sec">
-            <div class="sec-item">
+            <div class="sec-item reveal">
                 <div class="txt">
                     <h1>Smart Agriculture</h1>
                     <h4>Smart Agriculture employs modern technology and data analytics to optimize farming practices. It integrates sensors, drones, and data analysis to enhance crop management, resource utilization, and sustainability, ultimately boosting yields while minimizing environmental impact.</h4>
@@ -114,7 +168,7 @@
                     <img src="img/agriculture.jpg">
                 </div>
             </div>
-            <div class="sec-item" id="re">
+            <div class="sec-item reveal" id="re">
                 <div class="txt">
                     <h1>Smart Livestock Farming</h1>
                     <h4>Smart Livestock Farming utilizes advanced technology to improve animal management. It employs sensors, automation, and data analytics to monitor and optimize animal health, welfare, and production efficiency, ensuring sustainable and humane livestock farming practices.</h4>
@@ -125,7 +179,7 @@
                     <img src="img/livestock.jpg">
                 </div>
             </div>
-            <div class="sec-item">
+            <div class="sec-item reveal">
                 <div class="txt">
                     <h1>Smart Aquaculture</h1>
                     <h4>Smart Aquaculture applies cutting-edge technology and data-driven solutions to the cultivation of aquatic organisms. It involves monitoring water conditions, automation, and data analysis to enhance seafood production efficiency, disease management, and sustain.</h4>
@@ -138,7 +192,7 @@
             </div>
         </section>
 
-        <section class="thr">
+        <section class="thr reveal">
             <div class="thr-item">
                 <div class="txt">
                     <h1>Product</h1>
@@ -183,7 +237,7 @@
             </div>
         </section>
 
-        <section class="aboutus">
+        <section class="aboutus reveal">
             <div class="aboutus-item">
                 <div class="txt">
                     <h1>About Us</h1>
@@ -211,26 +265,26 @@
                   <div class="image"><span><img src="https://picsum.photos/300/200/?random=16" alt=""></span></div>
                   <div class="image"><span><img src="https://picsum.photos/300/200/?random=15" alt=""></span></div>
                 </div>
-              </div>
-              <div class="preview-box">
-                <div class="details">
-                  <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
-                  <span class="icon fas fa-times"></span>
+            </div>
+                <div class="preview-box">
+                    <div class="details">
+                        <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+                        <span class="icon">X</span>
+                    </div>
+                    <div class="image-box">
+                        <div class="slide prev">◀️</div>
+                        <div class="slide next">▶️</div>
+                        <img src="" alt="">
+                    </div>
                 </div>
-                <div class="image-box">
-                  <div class="slide prev">◀️</div>
-                  <div class="slide next">▶️</div>
-                  <img src="" alt="">
-                </div>
-              </div>
-              <div class="shadow"></div>
+            <div class="shadow"></div>
             
-              <script src="js/five.js"></script>
+             
             
         </section>
 
 
-        <section class="six">
+        <section class="six ">
             <div class="six-item">
                 <div class="txt">
                     <h1>Success Story</h1>
@@ -311,6 +365,7 @@
                 <div class="footer-txt">
                     <h4><a href="#">SKYAIOT</a></h4>
                     <a href="#"><span>About Us</span></a>
+                    <a href="#"><span>Distinctive Field</span></a>
                     <a href="#"><span>Product</span></a>
                     <a href="#"><span>Patent</span></a>
                 </div>
@@ -322,6 +377,9 @@
         </div>
     </footer>
 
-
+    <script src="js/scroll.js"></script>
+    <script src="js/nav.js"></script>
+    
+    <script src="js/five.js"></script>
   </body>
 </html>

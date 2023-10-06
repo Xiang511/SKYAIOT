@@ -147,6 +147,9 @@ img{
     margin-top: 5%;
     text-align: center;
 }
+.six-card-item img{
+    aspect-ratio: 4/3;
+}
 .six-card-item a{
     display: block;
     color: black;
@@ -264,7 +267,7 @@ img{
         flex-wrap: wrap;
     }
     .thr-card-item .card2{
-        width: 50%;
+        width: 25%;
     }
     .aboutus-item .txt{
         text-align: center;

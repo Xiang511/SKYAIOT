@@ -44,6 +44,9 @@ img{
     text-align: center;
     padding: 30px;
 }
+.sec-item .txt p{
+    font-size: 25px;
+}
 .sec-item .txt h1{
     padding: 10px;
     border-bottom: 1px solid;
@@ -97,6 +100,9 @@ img{
 
         margin-top: 2em;
     }
+    .sec-item:nth-child(2n) .txt h1,  .sec-item:nth-child(2n) .txt a,  .sec-item:nth-child(2n) .txt h4{
+        text-align: right;
+    }
 }
 
 
@@ -122,10 +128,6 @@ img{
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
-    }
-
-    .sec-item:nth-child(2n) .txt h1,  .sec-item:nth-child(2n) .txt a,  .sec-item:nth-child(2n) .txt h4{
-        text-align: right;
     }
 }
 @media screen and (min-width:1024px){
@@ -156,4 +158,10 @@ img{
     .sec-item:nth-child(odd) .txt h1,  .sec-item:nth-child(odd) .txt a,  .sec-item:nth-child(odd) .txt h4{
         text-align: left;
     }
+    .sec-item:nth-child(odd) .txt{
+       text-align: left;
+    }
+    .sec-item:nth-child(even) .txt{
+        text-align: right;
+     }
 }

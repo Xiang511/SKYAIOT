@@ -10,23 +10,34 @@ const btns = document.querySelectorAll(".nav-btn");
 const slides = document.querySelectorAll(".img-slide");
 const contents = document.querySelectorAll(".content");
 
-var sliderNav = function(manual){
-    btns.forEach((btn)=>{
+var sliderIndex = 0; // 初始索引
+
+var sliderNav = function (index) {
+    btns.forEach((btn) => {
         btn.classList.remove("active");
     });
-    slides.forEach((slide)=>{
+    slides.forEach((slide) => {
         slide.classList.remove("active");
     });
-    contents.forEach((content)=>{
+    contents.forEach((content) => {
         content.classList.remove("active");
     });
 
-    btns[manual].classList.add("active");
-    slides[manual].classList.add("active");
-    contents[manual].classList.add("active");
-}
-    btns.forEach((btn,i)=>{
-        btn.addEventListener("click",()=>{
-            sliderNav(i)
-        });
+    btns[index].classList.add("active");
+    slides[index].classList.add("active");
+    contents[index].classList.add("active");
+};
+
+var autoSlide = setInterval(function () {
+    // 增加索引，循环滑动到第一个元素
+    sliderIndex = (sliderIndex + 1) % btns.length;
+    sliderNav(sliderIndex);
+}, 7000); //  毫秒
+
+btns.forEach((btn, i) => {
+    btn.addEventListener("click", function () {
+        sliderIndex=i;
+        // clearInterval(autoSlide); // 清除自动滑动定时器
+        sliderNav(i);
     });
+});

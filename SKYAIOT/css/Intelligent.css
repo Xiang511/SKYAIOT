@@ -1,0 +1,222 @@
+*{
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    /* border:  1px solid; */
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wrap{
+    flex-grow: 1;
+}
+img{
+    width: 100%;
+}
+.banner{
+    height: 14em;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.banner  h1{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+  
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.DistinctiveField{
+    min-height: 60vh;
+}
+#Distinctive h1{
+    display: block;
+    text-align: center  ;
+}
+
+.sec{
+    width: 100%;
+}
+/* .sec .title{
+    text-align:center;
+    padding: 20px;
+} */
+.sec-item .txt{
+    text-align: center;
+    padding: 30px;
+}
+.sec-item .txt h1{
+    padding: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 10%;
+}
+.sec-item .txt h4{
+    text-align:initial;
+    margin-bottom: 5%;
+}
+.sec-item a{
+    color: black;
+    text-decoration: none;
+}
+.sec-item .txt i{
+    text-align: center;
+    vertical-align: bottom;
+    margin-left: 6px;
+}
+.sec-item .pic{
+    padding: 20px;
+    width: 100%;
+}
+.aboutus-item .txt h1{
+    display: inline-block;
+    padding: 30px;
+    /* border-bottom: 3px solid; */
+}
+.aboutus-item .txt h3{
+    margin-bottom: 20px;
+}
+ 
+
+.aboutus-card-item .txt{
+    text-align: center;
+    padding: 30px;
+}
+.aboutus-card-item .txt h1{
+    padding: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 10%;
+}
+.aboutus-card-item .txt h4{
+    text-align:left;
+    margin-bottom: 5%;
+}
+.aboutus-card-item a{
+    color: black;
+    text-decoration: none;
+}
+.aboutus-card-item .txt i{
+    text-align: center;
+    vertical-align: bottom;
+    margin-left: 6px;
+}
+
+.far.fa-arrow-alt-circle-down {
+    animation: slideDown 1s linear infinite;
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(10px);
+    }
+}
+
+
+
+
+@media screen and (min-width:768px){
+    .DistinctiveField{
+        min-height: 40vh;
+    }
+    .sec-item .txt , .thr-item .txt{
+        text-align: left;
+        /* padding: 30px; */
+    }
+    .sec-item .txt h1{
+        padding: 10px;
+        border-bottom: 1px solid;
+        margin-bottom: 5%;
+    }
+    .aboutus-item .pic img{
+        aspect-ratio: 4/3;
+    }
+    .aboutus-item .txt{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .grow{
+        flex-grow: 1;
+    }
+    .aboutus-item .pic{
+        margin-top: 30px;
+        width: 45%;
+    } 
+    .aboutus-card-item{
+        display: flex;
+    }
+}
+@media screen and (min-width:992px){
+    .DistinctiveField{
+        min-height: 30vh;
+    }
+    .sec, .footers, .DistinctiveField{
+        max-width: 1400px;
+        margin: auto;
+    }
+    .sec-item{
+        display: flex;
+        justify-content: center;
+    }
+    #re{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    #re h1,  #re a,  #re h4{
+        text-align: right;
+    }
+    .sec-item .pic img{
+        aspect-ratio: 4/3;
+    }
+    .sec-item .txt{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .grow{
+        flex-grow: 1;
+    }
+    .sec-item .pic{
+        margin-top: 30px;
+        width: 45%;
+    } 
+    .aboutus-item .txt{
+        text-align: left;
+        padding: 30px;
+        width: 60%;
+        justify-content: space-around;
+    }
+    .aboutus-item .txt h1{
+        padding: 10px;
+    }
+    .aboutus-card-item .txt h4{
+        text-align: left;
+    }
+    .aboutus-item .txt h3{
+        font-size: 40px;
+    }
+}

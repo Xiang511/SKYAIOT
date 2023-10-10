@@ -40,7 +40,51 @@
         }
     </style>
     <!-- font -->
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
+        .dropdown-submenu {
+            position: absolute;
+            display: none;
+            background-color: #000;
+            right: 8px;
+            width: 82%;
+        }
+
+        .dropdown-submenu li {
+            display: block;
+            box-sizing: border-box;
+            padding: 5px;
+            margin-top: .5em;
+            margin-bottom: .5em;
+        }
+        .dropdown-submenu li:first-child{
+          margin-top: 20px;
+        }
+        .dropdown .dropdown-submenu li > a{
+            margin: 8px;
+        }
+       
+
+        .dropdown-submenu a{
+            color: #fff;
+            text-align: right;
+        }
+
+        .dropdown:hover .dropdown-submenu {
+            display: block;
+        }
+
+        ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+     
+    </style>
    
 </head>
 <body>
@@ -50,15 +94,33 @@
             <div class="navigation">
                 <div class="navigation-items">
                     <a href="index.html">Home</a>
-                    <a href="#">Intelligent Domains</a>
+                    <!-- <a class="hide">Intelligent Domains</a> -->
+                    <a href="#"class="hide2">Smart Agriculture</a></li>
+                    <a href="#"class="hide2">Smart Livestock Farming</a></li>
+                    <a href="#"class="hide2">Smart Aquaculture</a></li>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#" id="ab">Intelligent Domains </a><i style='font-size:16px;color: #fff;' class='fas'>&#xf107;</i>
+                            <ul class="dropdown-submenu">
+                                <li><a href="">agriculture</a></li>
+                                <li><a href="#">livestock farming</a></li>
+                                <li><a href="#">aquaculture</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
                     <a href="patents.html">Patents</a>
                     <a href="#">Products</a>
                     <a href="#">Successful Stories</a>
-                    <a href="#">About Us</a>                    
-                    
-                    
-                    
-                    
+                    <a href="aboutus.html">About Us</a>
+                    <script>
+                      
+                            $(".hide").click(function() {
+                                $(".hide2").toggle();
+                            });
+                       
+                    </script>
+                   
                 </div>
             </div>
         </div>
@@ -159,7 +221,7 @@
                     <a href="patents.html"><span>Patents</span></a>
                     <a href="#"><span>Products</span></a>
                     <a href="#"><span>Successful Stories</span></a>
-                    <a href="#"><span>About Us</span></a>               
+                    <a href="aboutus.html"><span>About Us</span></a>               
                 </div>
                 <div class="footer-txt2"></div>
                 <div class="footer-logo">

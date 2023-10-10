@@ -18,6 +18,11 @@ footer{
 .icon-fb , .icon-yt, .icon-mail{
     margin-bottom: 8px;
 }
+.icon-fb a:hover svg, .icon-yt a:hover svg, .icon-mail a:hover svg{
+    transform: scale(1.2);
+    color: #09a6d4;
+    
+}
 .icon-fb svg, .icon-yt svg, .icon-mail svg{
     margin-right: 12px;
 }

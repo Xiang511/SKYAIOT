@@ -122,7 +122,9 @@ img{
 }
 
 
-.far.fa-arrow-alt-circle-down {
+.arrowD{
+    margin-left:1rem;
+    margin: 12px;
     animation: slideDown 1s linear infinite;
   }
   

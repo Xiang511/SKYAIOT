@@ -97,18 +97,18 @@
             <div class="navigation">
                 <div class="navigation-items">
                     <a href="index.html">Home</a>
-                    <!-- <a class="hide">Intelligent Domains</a> -->
-                    <a href="#"class="hide2">Smart Agriculture</a></li>
+                    <a href="Intelligent.html" class="hide">Intelligent Domains</a>
+                    <!-- <a href="#"class="hide2">Smart Agriculture</a></li>
                     <a href="#"class="hide2">Smart Livestock Farming</a></li>
-                    <a href="#"class="hide2">Smart Aquaculture</a></li>
+                    <a href="#"class="hide2">Smart Aquaculture</a></li> -->
                     <ul class="dropdown">
                         <li>
-                            <a href="#" id="ab">Intelligent Domains </a>
-                            <ul class="dropdown-submenu">
+                            <a href="Intelligent.html" id="ab">Intelligent Domains </a>
+                            <!-- <ul class="dropdown-submenu">
                                 <li><a href="">agriculture</a></li>
                                 <li><a href="#">livestock farming</a></li>
                                 <li><a href="#">aquaculture</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                     </ul>
 
@@ -139,15 +139,23 @@
             <div class="aboutus-item" id="Distinctive">
                 <div class="aboutus-card-item">
                      <div class="pic">
-                        <img src="https://picsum.photos/600/600/?random=10">
+                        <img src="img/banner5.jpg">
                     </div>
                     <div class="txt">
                         <h3>Smart Agriculture IoT System</h3>
                         <h4>Developed a groundbreaking smart agriculture IoT system that integrates artificial intelligence, big data analytics, and remote control technology, establishing expertise as a smart agriculture specialist with multiple patented innovations.</h4>
                         <!-- <div class="grow"></div> -->
-                        <a href="#"><span  class="learn">Scroll Down<i class='far fa-arrow-alt-circle-down' style='font-size:24px'></i></span></a>
+                        <button id="scrollTop"><span  class="learn">Scroll Down<i class='far fa-arrow-alt-circle-down' style='font-size:24px'></i></span></button>
                     </div>
-                   
+                    <script>
+                        $(document).ready(function() {
+                        // 當點擊 a 標籤時
+                        $("#scrollTop").click(function() {
+                            // 將畫面捲動到目標元素的頂部
+                            $(document).scrollTop($("#test").offset().top-300);
+                        });
+                        });
+                    </script>
                 </div>
             </div>
 
@@ -159,40 +167,194 @@
 
 
         
-        <section class="sec reveal">
+        <section class="sec reveal" id="test">
             <div class="sec-item ">
                 <div class="txt">
                     <h1>Smart Agriculture</h1>
                     <h4>Smart Agriculture employs modern technology and data analytics to optimize farming practices. It integrates sensors, drones, and data analysis to enhance crop management, resource utilization, and sustainability, ultimately boosting yields while minimizing environmental impact.</h4>
                     <!-- <div class="grow"></div> -->
-                    <a href="#"><span  class="learn">Learn More<i style="font-size:24px" class="fa">&#xf18e;</i></span></a>
+                    <div class="b">
+                        <button id="Agriculture"><span  class="learn">Learn More<i style="font-size:24px" class="fa">&#xf18e;</i></span>
+                    </div>
+                    
                 </div>
                 <div class="pic">
-                    <img src="img/agriculture.jpg">
+                    <img id="ag" src="img/agriculture.jpg">
                 </div>
             </div>
-            <div class="sec-item " id="re">
+
+            
+            <div class="sec-item introduce Agriculture">
+                <ol>
+                    <h1>Detailed information</h1>
+                    <li>
+                        <h5>1. Sensing technology: Smart agriculture utilizes a variety of sensing technologies, such as drones, sensors, and surveillance cameras, to collect data on soil, weather, crops, and livestock. This data helps farmers better understand the condition of their farms and make adjustments to their agricultural practices as needed.</br></br></h5>
+                    </li>
+                        <li><h5>2. Big data and analytics: The large amounts of data collected need to be processed and understood by powerful data analytics tools. These tools can help farmers predict weather, disease outbreaks, crop growth trends, and other factors to make more informed decisions.</br></br></li></h5>
+                    
+                        <li><h5>3. Automation and robotics: Smart agriculture includes the use of automation and robotics technology to perform agricultural tasks, such as planting, harvesting, weeding, and irrigation. This can improve production efficiency and reduce labor requirements.</br></br></li></h5>
+                    
+                        <li><h5>4. Precision agriculture: Precision agriculture is a data- and technology-driven approach that aims to provide different levels of care to different parts of a farm based on their needs and conditions. This can maximize crop yields while minimizing waste.</br></br></li></h5>
+                    
+                        <li><h5>5. Internet of Things (IoT): IoT technology plays a critical role in smart agriculture. It allows various agricultural equipment and sensors to communicate with each other and connect to a central control system for real-time monitoring and control.</br></br></li></h5>
+                    
+                        <li><h5>6. Drone technology: Drones can be used to monitor farms, measure soil properties, apply fertilizer, irrigate, and even spray pesticides. This helps save time and resources and improve production efficiency.</br></br></li></h5>
+                    
+                        <li><h5>7. Agricultural machine learning: Machine learning and artificial intelligence technologies can be used to predict agricultural-related variables, such as crop growth, disease spread, and water and fertilizer requirements, to provide better management recommendations.</br></br></li></h5>
+                    
+                        <li><h5>
+                            8. Sustainable agricultural practices: Smart agriculture can help to achieve more sustainable agricultural production by protecting the environment through reducing the use of chemicals, conserving water resources, and reducing greenhouse gas emissions.</br></br></h5>
+                                                
+                        </li>
+                        <li><h5>
+                            9. Market linkage and supply chain management: Smart agriculture can help farmers better manage the supply chain of their agricultural products, provide real-time market information, and promote the sale and distribution of agricultural products.</br>  </br></h5>
+                                              
+                        </li>
+                        <li><h5> Challenges and opportunities: While smart agriculture offers many potential benefits, it also faces challenges, such as data privacy, technological barriers, costs, and education.</h5></li>
+                </ol>
+                <div class="buttonclose">
+                    <button id="agb">close</button>
+                </div>
+                
+            </div>
+            <script>
+                $(document).ready(function() {
+                $("#Agriculture").click(function() {
+                    $(".Agriculture").toggle();
+                    if(window.innerWidth<992)
+                    $("#ag").toggle();
+                });
+                $("#agb").click(function() {
+                    $(".Agriculture").toggle();
+                    if(window.innerWidth<992)
+                    $("#ag").toggle();
+                });
+                });
+            </script>
+
+            <div class="sec-item reveal" id="re">
                 <div class="txt">
                     <h1>Smart Livestock Farming</h1>
                     <h4>Smart Livestock Farming utilizes advanced technology to improve animal management. It employs sensors, automation, and data analytics to monitor and optimize animal health, welfare, and production efficiency, ensuring sustainable and humane livestock farming practices.</h4>
                     <!-- <div class="grow"></div> -->
-                    <a href="#"><span  class="learn">Learn More<i style="font-size:24px" class="fa">&#xf18e;</i></span></a>
+                    <div class="c">
+                        <button id="LivestockFarming"><span  class="learn">Learn More<i style="font-size:24px" class="fa">&#xf18e;</i></span>
+                    </div>
                 </div>
                 <div class="pic">
-                    <img src="img/livestock.jpg">
+                    <img id="farm" src="img/livestock.jpg">
                 </div>
             </div>
-            <div class="sec-item ">
+
+
+            <div class="sec-item introduce LivestockFarming ">
+                <ol> 
+                    <h1>Detailed information</h1>
+                    <li>
+                        <h5>1. Health monitoring: Sensing technologies such as wearable devices, sensors, and surveillance cameras can be used to monitor the health status of livestock in real time. These technologies can detect body temperature, heart rate, diet, and exercise patterns to help early detection of diseases or other health problems.</br></br></h5>
+                    </li>
+                        <li><h5>2.Precision feeding: Precision feeding is a method of precisely controlling the diet of individual animals based on their needs and growth stages. This helps to improve feed utilization, reduce feed waste, and ensure that animals receive adequate nutrition.</br></br></li></h5>
+                    
+                        <li><h5>3. Automated farming: Automation technologies, such as automatic feeders, automatic milking machines, and automatic cleaning systems, can be used to reduce the workload of farmers and improve the efficiency of livestock farming.</br></br></li></h5>
+                    
+                        <li><h5>4. Remote monitoring and control: Farmers can access data from livestock farms remotely through remote monitoring systems and control feeding and environmental parameters, thereby saving time and resources.</br></br></li></h5>
+                    
+                        <li><h5>5. Genetic selection and breeding: Genetics and genetic research can help farmers select animals with excellent breed characteristics to improve yield and quality.</br></br></li></h5>
+                    
+                        <li><h5>6. Environmental monitoring: Smart livestock farming can be used to monitor environmental conditions in livestock farms, such as temperature, humidity, and air quality, to ensure animal comfort and production efficiency.</br></br></li></h5>
+                    
+                        <li><h5>7. Data analysis and prediction: Collected data can be analyzed to predict livestock growth, production, and health trends, thereby making more informed management decisions.</br></br></li></h5>
+                    
+                        <li><h5>
+                            8. Sustainability: Smart livestock farming can help to reduce the environmental impact of the livestock industry, including reducing water resource use, greenhouse gas emissions, and land use.</br></br></h5>
+                                                
+                        </li>
+                        <li><h5>
+                            9. Market linkage and brand value: Smart livestock farming can help farmers build stronger brands, provide higher-quality livestock products, and better meet market demand.</br></br></h5>
+                                                
+                        </li>
+                        
+                </ol>
+                <div class="buttonclose">
+                    <button id="farmb">close</button>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function() {
+                $("#LivestockFarming").click(function() {
+                    $(".LivestockFarming").toggle();
+                    if(window.innerWidth<992)
+                    $("#farm").toggle();
+                });
+                $("#farmb").click(function() {
+                    $(".LivestockFarming").toggle();
+                    if(window.innerWidth<992)
+                    $("#farm").toggle();
+                });
+                });
+            </script>
+            <div class="sec-item reveal">
                 <div class="txt">
                     <h1>Smart Aquaculture</h1>
                     <h4>Smart Aquaculture applies cutting-edge technology and data-driven solutions to the cultivation of aquatic organisms. It involves monitoring water conditions, automation, and data analysis to enhance seafood production efficiency, disease management, and sustain.</h4>
                     <!-- <div class="grow"></div> -->
-                    <a href="#"><span  class="learn">Learn More<i style="font-size:24px" class="fa">&#xf18e;</i></span></a>
+                    <div class="b">
+                        <button id="Aquaculture"><span  class="learn">Learn More<i style="font-size:24px" class="fa">&#xf18e;</i></span>
+                    </div>
                 </div>
                 <div class="pic">
-                    <img src="img/breeding.jpg">
+                    <img id="br" src="img/breeding.jpg">
                 </div>
             </div>
+
+
+            <div class="sec-item introduce Aquaculture">
+                <ol>
+                    <h1>Detailed information</h1>
+                    <li>
+                        <h5>1. Water quality monitoring: Sensing technologies and sensors can be used to monitor water temperature, pH, oxygen levels, and pollutant levels. This helps to ensure an environment suitable for fish growth and reduce the risk of water pollution.</br></br></h5>
+                    </li>
+                        <li><h5>2. Remote monitoring: The aquaculture industry can use remote monitoring systems to monitor the operation of aquaculture farms, including feeding, water circulation, and water quality. This allows farmers to access key data anytime, anywhere for timely management.</br></br></li></h5>
+                    
+                        <li><h5>3. Smart feeding: Automated feeding systems can provide precise feeding amounts based on fish needs and growth stages, thereby reducing feed waste and improving production efficiency.</br></br></li></h5>
+                    
+                        <li><h5>4. Predictive analytics: The aquaculture industry can use data analytics and machine learning techniques to predict fish growth trends, changes in aquaculture environments, and disease outbreaks. This helps to develop more effective management strategies.</br></br></li></h5>
+                    
+                        <li><h5>5. Water plant management: Smart aquaculture not only focuses on fish farming, but also includes the management of aquatic plants, such as the planting and harvesting of rice, algae, and other aquatic plants.</br></br></li></h5>
+                    
+                        <li><h5>6. Water product certification and traceability: Blockchain technology can be used to track the origin, production process, and supply chain of water products to ensure product quality and safety.</br></br></li></h5>
+                    
+                        <li><h5>7. Eco-friendly practices: Smart aquaculture can achieve a more sustainable aquaculture industry by reducing the environmental impact of aquaculture, such as water pollution and resource waste.</br></br></li></h5>
+                    
+                        <li><h5>
+                            8. Market linkage: Smart aquaculture can help aquaculture stakeholders better connect to the market, understand demand, provide high-quality water products, and improve industry competitiveness.</br></br></h5>
+                                                
+                        </li>
+                        <li><h5>
+                            9. Market linkage and supply chain management: Smart agriculture can help farmers better manage the supply chain of their agricultural products, provide real-time market information, and promote the sale and distribution of agricultural products.</br> </br></h5>
+                                               
+                        </li>
+                        <li><h5> Challenges and opportunities: While smart agriculture offers many potential benefits, it also faces challenges, such as data privacy, technological barriers, costs, and education.</h5></li>
+                </ol>
+                <div class="buttonclose">
+                    <button id="brb">close</button>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function() {
+                $("#Aquaculture").click(function() {
+                    $(".Aquaculture").toggle();
+                    if(window.innerWidth<992)
+                    $("#br").toggle();
+                });
+                $("#brb").click(function() {
+                    $(".Aquaculture").toggle();
+                    if(window.innerWidth<992)
+                    $("#br").toggle();
+                });
+               
+                });
+            </script>
         </section>
     </div>
 

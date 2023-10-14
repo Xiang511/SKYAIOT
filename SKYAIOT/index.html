@@ -38,12 +38,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- fb.ig.twitter -->
 
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="dist/owl.carousel.min.js"></script>
 
     <style>
         .dropdown {
@@ -99,18 +103,18 @@
             <div class="navigation">
                 <div class="navigation-items">
                     <a href="index.html">Home</a>
-                    <!-- <a class="hide">Intelligent Domains</a> -->
-                    <a href="#"class="hide2">Smart Agriculture</a></li>
+                    <a href="Intelligent.html" class="hide">Intelligent Domains</a>
+                    <!-- <a href="#"class="hide2">Smart Agriculture</a></li>
                     <a href="#"class="hide2">Smart Livestock Farming</a></li>
-                    <a href="#"class="hide2">Smart Aquaculture</a></li>
+                    <a href="#"class="hide2">Smart Aquaculture</a></li> -->
                     <ul class="dropdown">
                         <li>
-                            <a href="#" id="ab">Intelligent Domains </a>
-                            <ul class="dropdown-submenu">
+                            <a href="Intelligent.html" id="ab">Intelligent Domains </a>
+                            <!-- <ul class="dropdown-submenu">
                                 <li><a href="">agriculture</a></li>
                                 <li><a href="#">livestock farming</a></li>
                                 <li><a href="#">aquaculture</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                     </ul>
 
@@ -278,41 +282,52 @@
                 </div>
             </div>
             <div class="thr-card-item">
-                <div class="card2">
-                    <div class="pic">
-                        <img src="img/product1.png" style="aspect-ratio: 1/1;">
+                <div class="owl-carousel owl-theme">
+                    <div class="card3">
+                         <img src="img/16路控制器_0.jpg" alt="image" />
+                          <h5>16-channel controller</h5>
                     </div>
-                    <div class="txt">
-                         <h3></h3>
-                    </div>  
-                </div>
-               
-                <div class="card2">
-                    <div class="pic">            
-                    <img src="img/product2.png" style="aspect-ratio: 1/1;">        
+                    <div class="card3">
+                         <img src="img/dam0455-2(1).jpg" alt="image" />
+                          <h5>4-channel controller</h5>
                     </div>
-                    <div class="txt">
-                         <h3></h3>
-                    </div>  
-                </div>
-                <div class="card2">
-                    <div class="pic">
-                    <img src="img/商品圖 (1).jpg">
+                    <div class="card3">
+                         <img src="img/d38723250b37cbe0eda578b28ff2a2d5.jpg " alt="image" />
+                          <h5>micro-drip irrigation pipe</h5>
                     </div>
-                    <div class="txt">
-                         <h3></h3>
-                    </div>  
-                </div>
-                <div class="card2">
-                    <div class="pic">
-                    <img src="img/16路控制器商品圖 (1).jpg">
+                    <div class="card3">
+                         <img src="img/16路控制器_1.png" alt="image" />
+                          <h5></h5>
                     </div>
-                    <div class="txt">
-                         <h3></h3>
-                    </div>  
                 </div>
+            </div>
                 <a href="#"><span  class="learn">Learn More<i style="font-size:24px" class="fa">&#xf18e;</i></span></a>
             </div>
+
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $(".owl-carousel").owlCarousel();
+                });
+        
+                $('.owl-carousel').owlCarousel({
+                    loop: false,
+                    margin: 10,
+                    nav: false,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 4
+                        }
+                    }
+                })
+            </script>
+
+
         </section>
 
         <section class="aboutus reveal">
@@ -443,7 +458,7 @@
                 <div class="footer-txt">
                     <h4><a href="#">SKYAIOT</a></h4>
                     <a href="index.html"><span>Home</span></a>
-                    <a href="#"><span>Intelligent Domains</span></a>
+                    <a href="Intelligent.html"><span>Intelligent Domains</span></a>
                     <a href="patents.html"><span>Patents</span></a>
                     <a href="#"><span>Products</span></a>
                     <a href="#"><span>Successful Stories</span></a>

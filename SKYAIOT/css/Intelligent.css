@@ -15,6 +15,10 @@ html, body{
 img{
     width: 100%;
 }
+button{
+    border: none;
+    background: #FFF;
+}
 .banner{
     height: 14em;
     background: rgba(0, 0, 0, 0.8);
@@ -47,6 +51,7 @@ img{
 .DistinctiveField{
     min-height: 60vh;
 }
+
 #Distinctive h1{
     display: block;
     text-align: center  ;
@@ -59,9 +64,25 @@ img{
     text-align:center;
     padding: 20px;
 } */
+.b span{
+    position: relative;
+    left: 0;
+}
+.c{
+    
+    display: flex;
+    justify-content: center;
+}
 .sec-item .txt{
     text-align: center;
     padding: 30px;
+}
+.sec-item .txt span{
+    text-align: left;
+    width: 100%;
+}
+.sec-item .txt span:hover{
+    color: darkblue;
 }
 .sec-item .txt h1{
     padding: 10px;
@@ -85,12 +106,43 @@ img{
     padding: 20px;
     width: 100%;
 }
+.sec-item.introduce{
+    display: none;
+}
+.introduce{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.introduce h1{
+    margin-bottom: 1em;
+}
+.introduce ol{
+    padding-left: 1rem;
+}
+.introduce li{
+    margin-top: 1em;
+}
+.introduce button{
+    width: 6em;
+    height: 2em;
+    border-radius: 5px;
+    color: #FFF;
+    background: #6684a7;
+}
+.introduce button:hover{
+    background: #7d56b7;
+}
+.buttonclose{
+    display: flex;
+    justify-content: center;
+}
 .aboutus-item .txt h1{
     display: inline-block;
     padding: 30px;
     /* border-bottom: 3px solid; */
 }
 .aboutus-item .txt h3{
+    text-align: center;
     margin-bottom: 20px;
 }
  
@@ -111,6 +163,7 @@ img{
 .aboutus-card-item a{
     color: black;
     text-decoration: none;
+    text-align: center;
 }
 .aboutus-card-item .txt i{
     text-align: center;
@@ -148,6 +201,9 @@ img{
         border-bottom: 1px solid;
         margin-bottom: 5%;
     }
+    .c{
+        justify-content: start;
+    }
     .aboutus-item .pic img{
         aspect-ratio: 4/3;
     }
@@ -180,6 +236,9 @@ img{
         display: flex;
         justify-content: center;
     }
+    .c{
+        justify-content: end;
+    }
     #re{
         display: flex;
         flex-direction: row-reverse;
@@ -196,6 +255,9 @@ img{
         display: flex;
         flex-direction: column;
 
+    }
+    .introduce.LivestockFarming h1{
+        text-align: right;
     }
     .grow{
         flex-grow: 1;

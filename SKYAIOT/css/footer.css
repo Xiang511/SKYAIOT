@@ -15,6 +15,10 @@ footer{
     text-decoration: none;
     color: #FFF;
 }
+.footer-item a:hover, .footer-txt a:hover{
+    color: #09a6d4;
+    scale: 1.1;
+}
 .icon-fb , .icon-yt, .icon-mail{
     margin-bottom: 8px;
 }

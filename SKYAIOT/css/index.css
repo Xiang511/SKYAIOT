@@ -61,7 +61,7 @@ img{
 .thr{
     background: #F4F4F4;
     padding: 10px;
-    min-height: 80vh;
+    /* min-height: 80vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,20 +71,25 @@ img{
     padding: 30px;
     /* border-bottom: 3px solid; */
 }
+.owl-carousel h4 ,.owl-carousel h5{
+    margin-top: 2em;
+    text-align: center;
+
+}
 /* .thr-item .txt span{
     display:inline-block;
     width: 30%;
    
 } */
 
-.thr-card-item .card2{
+/* .thr-card-item .card2{
     padding: 20px;
 }
 .thr-card-item .card2 .txt{
     margin-top: 5%;
     text-align: center;
-}
-.thr-card-item a{
+} */
+.thr a{
     display: block;
     color: black;
     text-decoration: none;
@@ -92,7 +97,7 @@ img{
     margin-right: 20px;
     text-align: right;
 }
-.thr-card-item  i{
+.thr i{
     text-align: center;
     vertical-align: bottom;
     margin-left: 6px;

@@ -89,6 +89,41 @@ button{
 #hide{
     display: none;
 }
+.sec{
+    width: 100%;
+}
+/* .sec .title{
+    text-align:center;
+    padding: 20px;
+} */
+.sec-item .txt{
+    text-align: center;
+    padding: 30px;
+}
+.sec-item .txt h1{
+    padding: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 10%;
+}
+.sec-item .txt h4{
+    text-align:initial;
+    margin-bottom: 5%;
+    line-height: 1.4em;
+}
+.sec-item a{
+    color: black;
+    text-decoration: none;
+}
+.sec-item .txt i{
+    text-align: center;
+    vertical-align: bottom;
+    margin-left: 6px;
+}
+.sec-item .pic{
+    padding: 20px;
+    width: 100%;
+}
+
 
 
 
@@ -101,8 +136,18 @@ button{
     .card-item .card{
        width: 380px;
     }
+    .sec-item .txt , .thr-item .txt{
+        text-align: left;
+        /* padding: 30px; */
+    }
+    .sec-item .txt h1{
+        padding: 10px;
+        border-bottom: 1px solid;
+        margin-bottom: 5%;
+    }
+    
 }
-@media screen and (min-width:1200px){
+@media screen and (min-width:1300px){
     .footers{
         max-width: 1400px;
         margin: auto;
@@ -113,4 +158,37 @@ button{
     /* .card-item .card{
        flex-grow: 1;
      } */
+     .sec, .thr-card-item , .aboutus, .footers, .six-card-item , .DistinctiveField{
+        max-width: 1400px;
+        margin: auto;
+    }
+    .sec-item{
+        display: flex;
+        justify-content: center;
+    }
+    #re{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    #re h1,  #re a,  #re h4{
+        text-align: right;
+    }
+    .sec-item .pic img{
+        aspect-ratio: 4/3;
+    }
+    .sec-item .txt{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .sec-item .pic{
+        margin-top: 3em;
+        width: 45%;
+    }
+    .sec-item:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+   
 }

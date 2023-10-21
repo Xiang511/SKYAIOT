@@ -147,7 +147,7 @@ button{
     }
     
 }
-@media screen and (min-width:1300px){
+@media screen and (min-width:1200px){
     .footers{
         max-width: 1400px;
         margin: auto;

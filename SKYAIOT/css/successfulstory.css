@@ -55,6 +55,10 @@ button{
     text-align:center;
     padding: 20px;
 } */
+.sec-item p{
+    margin-top: 0.5em;
+    font-size: .6em;
+}
 .sec-item .txt{
     text-align: center;
     padding: 30px;
@@ -94,7 +98,10 @@ button{
     margin-bottom: 5%;
 
 }
-@media screen and (min-width:1300px){
+.sec-item img{
+    aspect-ratio: 4/3;
+}
+@media screen and (min-width:1200px){
     .sec, .thr-card-item , .aboutus, .footers, .six-card-item , .DistinctiveField{
         max-width: 1400px;
         margin: auto;
@@ -103,18 +110,15 @@ button{
         display: flex;
         justify-content: center;
     }
+    .sec-item .txt{
+        text-align: left;
+        
+    }
 
     .sec-item a{
         text-align: left;
     }
-    #re{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-    }
-    #re h1,  #re a,  #re h4{
-        text-align: right;
-    }
+   
     .sec-item .pic img{
         aspect-ratio: 4/3;
     }

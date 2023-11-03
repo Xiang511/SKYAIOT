@@ -14,9 +14,8 @@
   
 } */
 .main-container .containers{
-    width: 100%;
+    width: 98%;
     height: 500px;
-    margin: .5em;
     box-shadow: rgb(0, 0, 0,.3)3px 3px 6px 0px inset;
     background-size: cover;
     background-position: center;
@@ -24,6 +23,8 @@
     cursor: pointer;
     overflow: hidden;
     transition: all .8s;
+    margin: .3em auto;
+    padding: 0.3em;
 }
 .main-container .containers img{
     width: 100%;    
@@ -97,10 +98,14 @@
     background: rgb(34, 71, 152);
 }
 @media screen and (min-width:769px){
+.main-container .containers{
+    margin: 0.3em;
+}
  .main-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    
  }        
  .main-container .containers{
     width: 30%;

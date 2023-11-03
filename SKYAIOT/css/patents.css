@@ -20,16 +20,15 @@ img{
     background: rgba(0, 0, 0, 0.8);
     position: relative;
 }
-.banner .txt{
- 
-}
+
 .banner  h1{
-   position: absolute;
-   top: 64%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   color: #FFF;
-}
+    margin-top: 60px;
+    text-align: center;
+    padding: 30px;
+    color: #FFF;
+    font-size: 40px;
+    letter-spacing: .1em;
+ }
 
 
 
@@ -83,7 +82,12 @@ img{
     transform: translateY(0px);
     opacity: 1;
 }
-
+.txt a:hover{
+    color: #09a6d4;
+    transition: .1s ease;
+    scale: 1.1;
+    border-radius: 5px;
+}
 @media screen and (1024px > width > 767px){
     .sec-item:nth-child(2) .txt{
         margin-top: -3em;
@@ -100,9 +104,7 @@ img{
 
         margin-top: 2em;
     }
-    .sec-item:nth-child(2n) .txt h1,  .sec-item:nth-child(2n) .txt a,  .sec-item:nth-child(2n) .txt h4{
-        text-align: right;
-    }
+  
 }
 
 
@@ -152,16 +154,12 @@ img{
         justify-content: center;
     }
 
-    .sec-item:nth-child(2n) .txt h1,  .sec-item:nth-child(2n) .txt a,  .sec-item:nth-child(2n) .txt h4{
-        text-align: right;
-    }
-    .sec-item:nth-child(odd) .txt h1,  .sec-item:nth-child(odd) .txt a,  .sec-item:nth-child(odd) .txt h4{
+   
+    .sec-item:nth-child(n) .txt h1,  .sec-item:nth-child(n) .txt a,  .sec-item:nth-child(n) .txt h4{
         text-align: left;
     }
-    .sec-item:nth-child(odd) .txt{
+    .sec-item:nth-child(n) .txt{
        text-align: left;
     }
-    .sec-item:nth-child(even) .txt{
-        text-align: right;
-     }
+   
 }

@@ -13,14 +13,7 @@ html, body{
     flex-grow: 1;
 }
 /* carousel */
-@media screen and (min-width:1400px){
-    /* #carousel-inner{
-        height: 850px;
-    }    
-    .carousel-inner img{
-        aspect-ratio: 16/9;
-    }      */
-}
+
 img{
     width: 100%;
 }
@@ -28,10 +21,7 @@ img{
 .sec{
     width: 100%;
 }
-/* .sec .title{
-    text-align:center;
-    padding: 20px;
-} */
+
 .sec-item .txt{
     text-align: center;
     padding: 30px;
@@ -58,10 +48,13 @@ img{
     padding: 20px;
     width: 100%;
 }
-.thr{
+.third{
     background: #F4F4F4;
+}
+.thr{
+  
     padding: 10px;
-    /* min-height: 80vh; */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,32 +62,20 @@ img{
 .thr-item .txt h1{
     display: inline-block;
     padding: 30px;
-    /* border-bottom: 3px solid; */
+
 }
 .owl-carousel h4 ,.owl-carousel h5{
     margin-top: 2em;
     text-align: center;
 
 }
-/* .thr-item .txt span{
-    display:inline-block;
-    width: 30%;
-   
-} */
 
-/* .thr-card-item .card2{
-    padding: 20px;
-}
-.thr-card-item .card2 .txt{
-    margin-top: 5%;
-    text-align: center;
-} */
 .thr a{
     display: block;
     color: black;
     text-decoration: none;
     margin: 1em 20px 1em auto;
-    text-align: right;
+   
 }
 .thr a:hover{
     color: #09a6d4;
@@ -111,7 +92,7 @@ img{
 .aboutus-item .txt h1{
     display: inline-block;
     padding: 30px;
-    /* border-bottom: 3px solid; */
+    
 }
  
 
@@ -170,7 +151,20 @@ img{
 }
 
 
-
+.txt a:hover{
+    color: #09a6d4;
+    transition: .1s ease;
+    scale: 1.1;
+    margin-left: 2em;
+    border-radius: 5px;
+}
+.aboutus-card-item a:hover{
+    color: #09a6d4;
+    transition: .3s ease;
+    margin-right: 2em;
+    scale: 1.2;
+    border-radius: 5px;
+}
 
 
 
@@ -209,7 +203,7 @@ img{
     
 }
 @media screen and (min-width:1024px){
-    .sec, .thr-card-item , .aboutus, .footers, .six , .DistinctiveField{
+    .sec,.thr, .thr-card-item , .aboutus, .footers, .six , .DistinctiveField{
         max-width: 1400px;
         margin: auto;
     }
@@ -222,9 +216,7 @@ img{
         flex-direction: row-reverse;
         justify-content: center;
     }
-    #re h1,  #re a,  #re h4{
-        text-align: right;
-    }
+    
     .sec-item .pic img{
         aspect-ratio: 4/3;
     }

@@ -29,11 +29,12 @@ img{
  
 }
 .banner  h1{
-   position: absolute;
-   top: 64%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   color: #FFF;
+    margin-top: 60px;
+    text-align: center;
+    padding: 40px;
+    color: #FFF;
+    font-size: 40px;
+    letter-spacing: .1em;
 }
 
 .txt h4{
@@ -128,21 +129,6 @@ img{
 }
 
 
-.arrowD{
-    margin-left:1rem;
-    margin: 12px;
-    animation: slideDown 1s linear infinite;
-  }
-  
-  @keyframes slideDown {
-    0% {
-      transform: translateY(0);
-    }
-  
-    100% {
-      transform: translateY(10px);
-    }
-}
 
 
 

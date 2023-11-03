@@ -24,6 +24,9 @@
             @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&family=Kanit&display=swap');
         </style>
          <!-- font -->
+         <!-- animate -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- animate -->
     
         <!-- fb.ig.twitter -->
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -44,6 +47,7 @@
 
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <!-- 下拉式選單 -->
         <style>
             .dropdown {
                 position: relative;
@@ -116,21 +120,12 @@
                     <a href="product.html">Products</a>
                     <a href="successfulstory.html">Successful Stories</a>
                     <a href="aboutus.html">About Us</a>
-                    <script>
-                      
-                            $(".hide").click(function() {
-                                $(".hide2").toggle();
-                            });
-                       
-                    </script>
-                   
                 </div>
             </div>
         </div>
     </header>
     <div class="banner">
-            <h1>Intelligent Domains</h1>   
-    </br></br></br></br></br></br> </br> </br> 
+            <h1 class="animate__animated animate__backInDown">Intelligent Domains</h1>   
     </div>
 
 
@@ -143,9 +138,9 @@
                     </div>
                     <div class="txt">
                         <h3>Smart Agriculture IoT System</h3>
-                        <h4>Developed a groundbreaking smart agriculture IoT system that integrates artificial intelligence, big data analytics, and remote control technology, establishing expertise as a smart agriculture specialist with multiple patented innovations.</h4>
+                        <h5>Developed a groundbreaking smart agriculture IoT system that integrates artificial intelligence, big data analytics, and remote control technology, establishing expertise as a smart agriculture specialist with multiple patented innovations.</h5>
                         <!-- <div class="grow"></div> -->
-                        <button id="scrollTop"><span  class="learn">Scroll Down<i class='far fa-arrow-alt-circle-down' style='font-size:24px'></i></span></button>
+                        <button id="scrollTop"><span  class="learn">Scroll Down<img src="img/down-arrow.svg" style="width: 36px;height: 36px;"></span></button>
                     </div>
                     <script>
                         $(document).ready(function() {
@@ -410,6 +405,6 @@
 
     <script src="js/scroll.js"></script>
     <script src="js/nav.js"></script>
-    <script src="js/five.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

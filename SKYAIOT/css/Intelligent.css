@@ -26,13 +26,12 @@ button{
 }
 
 .banner  h1{
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 64%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #FFF;
+   margin-top: 60px;
+   text-align: center;
+   padding: 40px;
+   color: #FFF;
+   font-size: 40px;
+   letter-spacing: .1em;
 }
 
 .reveal{
@@ -56,6 +55,9 @@ button{
     display: block;
     text-align: center  ;
 }
+#Distinctive h5{
+   text-align: left;
+}
 
 .sec{
     width: 100%;
@@ -68,11 +70,7 @@ button{
     position: relative;
     left: 0;
 }
-.c{
-    
-    display: flex;
-    justify-content: center;
-}
+
 .sec-item .txt{
     text-align: center;
     padding: 30px;
@@ -171,19 +169,6 @@ button{
     margin-left: 6px;
 }
 
-.far.fa-arrow-alt-circle-down {
-    animation: slideDown 1s linear infinite;
-  }
-  
-  @keyframes slideDown {
-    0% {
-      transform: translateY(0);
-    }
-  
-    100% {
-      transform: translateY(10px);
-    }
-}
 
 
 
@@ -200,9 +185,6 @@ button{
         padding: 10px;
         border-bottom: 1px solid;
         margin-bottom: 5%;
-    }
-    .c{
-        justify-content: start;
     }
     .aboutus-item .pic img{
         aspect-ratio: 4/3;
@@ -236,17 +218,13 @@ button{
         display: flex;
         justify-content: center;
     }
-    .c{
-        justify-content: end;
-    }
+  
     #re{
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
     }
-    #re h1,  #re a,  #re h4{
-        text-align: right;
-    }
+   
     .sec-item .pic img{
         aspect-ratio: 4/3;
     }
@@ -256,9 +234,7 @@ button{
         flex-direction: column;
 
     }
-    .introduce.LivestockFarming h1{
-        text-align: right;
-    }
+  
     .grow{
         flex-grow: 1;
     }

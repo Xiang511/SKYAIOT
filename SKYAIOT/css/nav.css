@@ -125,6 +125,12 @@ section.home{
     text-decoration: none;
     border-radius: 2px;
 }
+#global::after{
+    content: "Chinese";
+    margin-left: .5em;
+    margin-top: 2px;
+    
+}
 .home .content a:hover{
     background: #09a6d4;
     color: #fff;
@@ -297,6 +303,14 @@ section.home{
     .hide, .hide2{
         display: block;
     }
+
+    #global::after{
+        border-top: 2px solid;
+        padding-top: .5em;
+        content: "Chinese Website";
+        margin-left: -1.5em;
+    }
+
     
 }
 @media (max-width:560px){

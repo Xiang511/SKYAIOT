@@ -1,0 +1,260 @@
+*{
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    /* border:  1px solid; */
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wrap{
+    flex-grow: 1;
+}
+img{
+    width: 100%;
+}
+button{
+    border: none;
+    background: #FFF;
+}
+.banner{
+    height: 14em;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.banner  h1{
+   margin-top: 60px;
+   text-align: center;
+   padding: 40px;
+   color: #FFF;
+   font-size: 40px;
+   letter-spacing: .1em;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+  
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.DistinctiveField{
+    min-height: 60vh;
+}
+
+#Distinctive h1{
+    display: block;
+    text-align: center  ;
+}
+#Distinctive h5{
+   text-align: left;
+}
+
+.sec{
+    width: 100%;
+}
+/* .sec .title{
+    text-align:center;
+    padding: 20px;
+} */
+.b span{
+    position: relative;
+    left: 0;
+}
+
+.sec-item .txt{
+    text-align: center;
+    padding: 30px;
+}
+.sec-item .txt span{
+    text-align: left;
+    width: 100%;
+}
+.sec-item .txt span:hover{
+    color: darkblue;
+}
+.sec-item .txt h1{
+    padding: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 10%;
+}
+.sec-item .txt h4{
+    text-align:initial;
+    margin-bottom: 5%;
+}
+.sec-item a{
+    color: black;
+    text-decoration: none;
+}
+.sec-item .txt i{
+    text-align: center;
+    vertical-align: bottom;
+    margin-left: 6px;
+}
+.sec-item .pic{
+    padding: 20px;
+    width: 100%;
+}
+.sec-item.introduce{
+    display: none;
+}
+.introduce{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.introduce h1{
+    margin-bottom: 1em;
+}
+.introduce ol{
+    padding-left: 1rem;
+}
+.introduce li{
+    margin-top: 1em;
+}
+.introduce button{
+    width: 6em;
+    height: 2em;
+    border-radius: 5px;
+    color: #FFF;
+    background: #6684a7;
+}
+.introduce button:hover{
+    background: #7d56b7;
+}
+.buttonclose{
+    display: flex;
+    justify-content: center;
+}
+.aboutus-item .txt h1{
+    display: inline-block;
+    padding: 30px;
+    /* border-bottom: 3px solid; */
+}
+.aboutus-item .txt h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+
+.aboutus-card-item .txt{
+    text-align: center;
+    padding: 30px;
+}
+.aboutus-card-item .txt h1{
+    padding: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 10%;
+}
+.aboutus-card-item .txt h4{
+    text-align:left;
+    margin-bottom: 5%;
+}
+.aboutus-card-item a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.aboutus-card-item .txt i{
+    text-align: center;
+    vertical-align: bottom;
+    margin-left: 6px;
+}
+
+
+
+
+
+@media screen and (min-width:768px){
+    .DistinctiveField{
+        min-height: 40vh;
+    }
+    .sec-item .txt , .thr-item .txt{
+        text-align: left;
+        /* padding: 30px; */
+    }
+    .sec-item .txt h1{
+        padding: 10px;
+        border-bottom: 1px solid;
+        margin-bottom: 5%;
+    }
+    .aboutus-item .pic img{
+        aspect-ratio: 4/3;
+    }
+    .aboutus-item .txt{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .grow{
+        flex-grow: 1;
+    }
+    .aboutus-item .pic{
+        margin-top: 30px;
+        width: 45%;
+    } 
+    .aboutus-card-item{
+        display: flex;
+    }
+}
+@media screen and (min-width:992px){
+    .DistinctiveField{
+        min-height: 30vh;
+    }
+    .sec, .footers, .DistinctiveField{
+        max-width: 1400px;
+        margin: auto;
+    }
+    .sec-item{
+        display: flex;
+        justify-content: center;
+    }
+  
+    #re{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+   
+    .sec-item .pic img{
+        aspect-ratio: 4/3;
+    }
+    .sec-item .txt{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+
+    }
+  
+    .grow{
+        flex-grow: 1;
+    }
+    .sec-item .pic{
+        margin-top: 30px;
+        width: 45%;
+    } 
+    .aboutus-item .txt{
+        text-align: left;
+        padding: 30px;
+        width: 60%;
+        justify-content: space-around;
+    }
+    .aboutus-item .txt h1{
+        padding: 10px;
+    }
+    .aboutus-card-item .txt h4{
+        text-align: left;
+    }
+    .aboutus-item .txt h3{
+        font-size: 40px;
+    }
+}

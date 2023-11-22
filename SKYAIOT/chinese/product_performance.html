@@ -9,10 +9,11 @@
     <link rel="icon" type="image/x-icon" href="../img/logo.png" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/patents.css">
+    <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/rest.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/five.css">
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,9 +22,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <!-- bootstrap -->
-    <!-- animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!-- animate -->
+
     <!-- font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&family=Kanit&display=swap');
@@ -34,8 +33,10 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- fb.ig.twitter -->
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- animate -->
 
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
     <!-- font -->
     <style>
@@ -47,6 +48,9 @@
         }
     </style>
     <!-- font -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <style>
         .dropdown {
             position: relative;
@@ -93,11 +97,10 @@
             margin: 0;
         }
 
-        .txt h4 {
+        .sec-item .txt h4 {
             line-height: 2.5em;
         }
     </style>
-
 </head>
 
 <body>
@@ -128,80 +131,63 @@
         </div>
     </header>
     <div class="banner">
-        <h1 class="animate__animated animate__backInDown">專利</h1>
+        <h1 class="animate__animated animate__backInDown">Sky AIoT 強大的應用功能</h1>
     </div>
-
-
-
 
     <div class="wrap">
         <section class="sec">
-            <div class="sec-item">
+            <div class="sec-item ">
                 <div class="txt">
-                    <h1>智能水資源利用系統
-                        </br>
-                        <p>(專利字號 # M621003)</p>
-                    </h1>
-                    <h4>為了發展有助於減少環境資源浪費，以及緩解於缺水時的民生困境的水資源利用系統，不僅智能的展現智能水資源利用系統的自動調節特性，無須擔心水資源收集過多而溢出，助於減少環境資源浪費，還可以連避免養殖有該水藻或該魚類的該第二水來源過於乾枯，可以保障該第二水來源的生態環境，達到永續發展的效果。
+                    <h1>植物種植應用</h1>
+                    <h4 style="font-size: 1.2em;">a. 我們提供即時監測植物種植環境的科技解決方案。我們的傳感器系統能夠實時收集土壤參數，包括水分、pH值、氮、磷、鉀等，並將這些寶貴的數據以秒為單位上傳到伺服器，形成直觀的曲線圖表。
+                    </br>
+                        b. 利用傳感器數據，Sky AIoT 系統可自動檢測植物缺水、缺氮、磷、鉀、等狀況，並採取相應措施，如啟動儲水桶或儲肥桶，自動開啟閥門。這使得農業種植實現無人化管理，提升糧食生產穩定性。同時，透過監測pH值和光合作用，我們能夠優化作物生長條件，使產量提升30%。所有相關生產數據將完整紀錄在伺服器上，確保水產品的質量可追溯。
                     </h4>
                     <!-- <div class="grow"></div> -->
-                    <a
-                        href="https://twpat1.tipo.gov.tw/twpatc/twpatkm?.730b0070001000000032000000000^0500010000010000001108BDA3436a"><span
-                            class="learn">了解更多<i style="font-size:24px" class="fa">&#xf18e;</i></span></a>
+                    <!-- <a href="Intelligent.html"><span  class="learn">Read More<i style="font-size:24px" class="fa">&#xf18e;</i></span></a> -->
                 </div>
                 <div class="pic">
-                    <img src="../img/1_Water Resource Patents.jpeg">
+                    <img src="../img/agriculture.jpg">
                 </div>
             </div>
-            <div class="sec-item reveal ">
+            <div class="sec-item reveal" id="re">
                 <div class="txt">
-                    <h1>生物智能監控養成系統
-                        </br>
-                        <p>(專利字號 # M607187)</p>
-                    </h1>
-                    <h4>為解決現行的生物養殖產業仍需以投資大量的人力成本為經營方式的技術問題。提供生物智能監控養成系統，該物聯網平台依據該環境條件以及該生物特徵產生一監控養殖指令並且自動傳遞至該物聯網裝置，該物聯網平台接受該上網裝置的操作。
+                    <h1>水產養殖應用</h1>
+                    <h4 style="font-size: 1.2em;">Sky AIoT 在水產養殖領域提供智能化的解決方案，通過傳感器實現對水質環境的全面監測和調控。利用傳感器監測水濁度，Sky AIoT 系統能夠根據實時數據，適時進行必要的過濾。同時，系統可檢測氧含量，以智能方式啟動打氣或水車，實現能源成本的有效節省。電導率和氯含量傳感器則能夠準確評估水質是否達標，實現水產養殖的全自動化管理，減少疾病和害蟲的發生，提高水產品產量20%。由養殖到出貨的完整履歷將儲存在伺服器上，確保水產品的質量可追溯。
+                    
                     </h4>
                     <!-- <div class="grow"></div> -->
-                    <a
-                        href="https://twpat1.tipo.gov.tw/twpatc/twpatkm?0037ADB80006020100000000000103200000003E000000000^_B"><span
-                            class="learn">了解更多<i style="font-size:24px" class="fa">&#xf18e;</i></span></a>
                 </div>
                 <div class="pic">
-                    <img src="../img/2_Biological Smart Monitoring Patents.jpeg">
+                    <img src="../img/breeding.jpg">
                 </div>
             </div>
             <div class="sec-item reveal">
                 <div class="txt">
-                    <h1>智能蜂箱
-                        </br>
-                        <p>(專利字號 # M618349)</p>
-                    </h1>
-                    <h4>提供一種智能蜂箱，其包含一箱體，該箱體內構成有一養殖空間；
-                        一智能養殖裝置，該遠端裝置可以透過該智能養殖裝置即時監控以及調節該養殖空間，使得一養蜂人可以依據所需調整該養殖條件，調控一蜂蜜的產量或是一蜂群的繁殖能力。</h4>
+                    <h1>畜牧業應用</h1>
+                    <h4 style="font-size: 1.2em;">Sky AIoT 提供全方位的畜牧業解決方案，搭配尖端的傳感器和控制器，實現對動物生態和環境的智能監控。我們獨特的一體化系統涵蓋了各種關鍵參數，確保畜牧環境的優化管理。
+                        a. 利用我們的控制器結合動物追蹤傳感器，能夠即時監測動物的活動水平，察覺生病或生殖週期的變化。同時，體溫傳感器和氨含量傳感器的應用可智能調節降溫，確保畜舍的衛生清潔。
+                    </br>
+                    b. 透過溫度、濕度、二氧化碳等傳感器，以及飼料攝入監測，實現畜牧業的全自動化管理。這不僅提高了生產效率，更重要的是確保動物在優越的環境中生存與成長，保障動物福祉。我們的系統為畜牧業主提供了全面、可靠的數據，助力畜牧業永續發展。
+                    </h4>
                     <!-- <div class="grow"></div> -->
-                    <a
-                        href="https://twpat1.tipo.gov.tw/twpatc/twpatkm?.e35c37AB0030100000032000000000050^0000100001000000808D00418b"><span
-                            class="learn">了解更多<i style="font-size:24px" class="fa">&#xf18e;</i></span></a>
+                    <!-- <a href="Intelligent.html"><span  class="learn">Read More<i style="font-size:24px" class="fa">&#xf18e;</i></span></a> -->
                 </div>
                 <div class="pic">
-                    <img src="../img/3_Smart Beehive Patents.jpeg">
+                    <img src="../img/livestock.jpg">
                 </div>
             </div>
             <div class="sec-item reveal">
                 <div class="txt">
-                    <h1>農作物生產履歷物聯網系統
-                        </br>
-                        <p>(專利字號 # M598470)</p>
-                    </h1>
-                    <h4>由於現有農業自動化灌溉主要以定時澆灌的方式進行，缺乏農作物狀態即時監控的調整手段與生產履歷的紀錄。為此透過將各種物聯網節點的數據上傳至物聯網雲平台，能夠依據農作物的狀況反饋進行灌溉，達到較佳的農業自動化灌溉的效果，由於灌溉的數據、農作物生長土壤環境的數據都上傳儲存在該物聯網雲平台的伺服器，因此能紀錄施肥灌溉的過程與數據，使運用本新型種植的農作物具有可追溯的生產履歷。
-                    </h4>
+                    <h1>植物固碳應用</h1>
+                    <h4 style="font-size: 1.2em;">Sky AIoT 的植物固碳應用專注於提供先進的農業科技，通過植物生態的全面監測，實現碳排放的精準管理。
+ 
+                        利用我們的控制器搭配光合作用傳感器(PAM)、二氧化碳傳感器、蒸發傳感器等，系統能夠密切關注植物的光合作用效率。葉綠素和螢光傳感器用於理解光合作用效率，進而影響碳固定的過程。氧氣濃度、光合效率、紫外線照射等傳感器被應用於固碳農業，以應對氣候變遷的挑戰。這一智能系統不僅提高了碳固定過程的效率，還有助於更好地理解和持續管理植物固碳的全過程。 Sky AIoT 的植物固碳應用將有力地支持農業產業的永續發展，同時符合環保和生態友好！</h4>
                     <!-- <div class="grow"></div> -->
-                    <a
-                        href="https://twpat1.tipo.gov.tw/twpatc/twpatkm?.fc7d037ADB0D0401000000010320000000000000050^0010000000804260"><span
-                            class="learn">了解更多<i style="font-size:24px" class="fa">&#xf18e;</i></span></a>
+                    <!-- <a href="Intelligent.html"><span  class="learn">Read More<i style="font-size:24px" class="fa">&#xf18e;</i></span></a> -->
                 </div>
                 <div class="pic">
-                    <img src="../img/4_Crop Traceability IoT Patents.jpeg">
+                    <img src="../img/banner3 (2).png">
                 </div>
             </div>
         </section>
@@ -265,6 +251,7 @@
 
     <script src="js/scroll.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/five.js"></script>
 </body>
 
 </html>

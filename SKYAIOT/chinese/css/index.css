@@ -9,6 +9,9 @@ html, body{
     display: flex;
     flex-direction: column;
 }
+.txt h4{
+    line-height: 2.5em;
+}
 .wrap{
     flex-grow: 1;
 }

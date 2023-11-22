@@ -25,7 +25,6 @@ header .brand{
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    
 }
 header .brand:hover{
     color: #09a6d4;
@@ -126,12 +125,6 @@ section.home{
     text-decoration: none;
     border-radius: 2px;
 }
-#global::after{
-    content: "English";
-    margin-left: .5em;
-    margin-top: 2px;
-    
-}
 .home .content a:hover{
     background: #09a6d4;
     color: #fff;
@@ -211,7 +204,6 @@ section.home{
 }
 
 
-
 @media (max-width:1320px){
     header{
         padding: 12px 20px;
@@ -257,7 +249,7 @@ section.home{
         box-shadow: 0 5px 25px rgb(1 1 1/ 20%);
     }
     .menu-btn{
-        background:url(../../img/hicon.svg)no-repeat;
+        background:url(../img/hicon.svg)no-repeat;
         background-size: 30px;
         background-position: center;
         width: 40px;
@@ -267,7 +259,7 @@ section.home{
     }
     .menu-btn.active{
         z-index: 999;
-        background:url(../../img/close.png)no-repeat;
+        background:url(../img/close.png)no-repeat;
         background-size: 25px;
         background-position: center;
         transition: 0.3s ease;
@@ -305,14 +297,6 @@ section.home{
     .hide, .hide2{
         display: block;
     }
-
-    #global::after{
-        border-top: 2px solid;
-        padding-top: .5em;
-        content: "English Website";
-        margin-left: -1em;
-    }
-
     
 }
 @media (max-width:560px){

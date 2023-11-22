@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box  ;
+        }
+        a{
+            text-decoration: none;
+            color: #FFF;
+        }
+        .main-container{
+            width: 100%;
+            height: 500px;
+            margin-top: 20px;   
+          
+        }
+        .containers{
+            width: 100%;
+            height: 400px;
+            margin: .5em;
+            box-shadow: rgb(0, 0, 0,.3)3px 3px 6px 0px inset;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all .8s;
+        }
+        .containers img{
+            width: 100%;    
+        }
+        .first{
+            background-image: url('../img/7.png');
+            background-repeat: no-repeat;
+        }
+        .second{
+            background-image: url('../img/8.png');
+            background-repeat: no-repeat;
+        }
+        .third{
+            background-image: url('../img/9.png');
+            background-repeat: no-repeat;
+        }
+        .content{
+            width: 100%;
+            height: 100%;
+            transform: translateY(83%);
+            transition: 0.7s ease-in-out;
+        }
+        .content h1{
+            color: #FFF;
+            margin-left: 25px;
+            font-size: 30px;
+            text-shadow: 1px 1px 1px #000;
+            /* padding-top: 50px; */
+        }
+        .bg{
+            background: rgba(0,0,0,0.6);
+        }
+        .content p{
+            text-align: justify;
+            width: 75%;
+            color: #DBD8E3;
+            margin: 25px 0 0 25px;
+            font-size: 16px;
+            /* line-height: 1.5em; */
+        }
+        .fa-map-marker{
+            margin-left: 2px;
+            margin-right: 4px;
+            color: red;
+            font-size: 12px;
+        }
+        .content span{
+            margin-left: 25px;
+            color: #F5EDED;
+            font-size: 14px;
+        }
+        .containers:hover > .content{
+            transform: translateY(0%);
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)); 
+        }
+        .bookBtn{
+            border-radius: 5px;
+            margin-left: 25px;
+            font-size: 18px;
+            margin-top: 30px;
+            padding: 12px;
+            border: none;
+            color: #FFF;
+            background-color: #09a6d4;
+        }
+        .bookBtn:hover{
+            background: rgb(34, 71, 152);
+        }
+        @media screen and (min-width:768px){
+         .main-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+         }        
+         .containers{
+            width: 30%;
+         }
+         .content{
+            transform: translateY(73%);
+         }
+         .content h1{
+            font-size: 1.8em;
+         }
+        }
+        @media screen and (min-width:1200px){
+            .content{
+            transform: translateY(84%);
+         }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="containers first">
+            <div class="content">
+                <div class="bg">
+                    <h1>Yong An Fishing Harbor</h1>
+                    <span><i class="fa fa-map-marker"></i> Xinyi District, Taoyuan City</span>
+                </div>
+                <p></p>
+                <button class="bookBtn"><a href="successfulstory">Learn More</a></button>
+            </div>
+        </div>
+        <div class="containers second">
+            <div class="content">
+                <div class="bg">
+                    <h1>Coffee Tree Cultivation</h1>
+                    <span><i class="fa fa-map-marker"></i>Tianliao District, Kaohsiung City</span>
+                </div>
+                <p>Analyzing sensor data collected in the cloud, we study the concentrated flowering patterns of coffee trees to effectively enhance coffee bean yields. The benefits of time and labor savings are achieved through remote operation via a mobile app. Furthermore, leveraging this research data allows for a reanalysis of how to control the flavor and characteristics of coffee.</p>
+                <button class="bookBtn"><a href="successfulstory">Learn More</a></button>
+            </div>
+        </div>
+        <div class="containers third">
+            <div class="content">
+                <div class="bg">
+                    <h1>Smart Flower Garden</h1>
+                    <span><i class="fa fa-map-marker"></i>A-Lian District, Kaohsiung City</span>
+                </div>
+                <p>This area collaborates with the Sunrise Radiance Center to establish a solar power station for electricity supply and a simplified smart agriculture system with water-saving drip irrigation. This system, compatible with courses offered by the Radiance Center, allows the elderly to easily cultivate crops with just a few taps, enhancing their sense of accomplishment after harvest</p>
+                <button class="bookBtn"><a href="successfulstory">Learn More</a></button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

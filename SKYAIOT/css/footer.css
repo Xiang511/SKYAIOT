@@ -18,15 +18,15 @@ footer{
 .footer-item a:hover, .footer-txt a:hover{
     color: #09a6d4;
 }
-.icon-fb , .icon-yt, .icon-mail{
+.icon-fb , .icon-yt, .icon-line,.icon-shop, .icon-mail{
     margin-bottom: 8px;
 }
-.icon-fb a:hover svg, .icon-yt a:hover svg, .icon-mail a:hover svg{
+.icon-fb a:hover svg, .icon-yt a:hover svg, .icon-line a:hover svg, .icon-shop a:hover svg, .icon-mail a:hover svg{
     transform: scale(1.2);
     color: #09a6d4;
-    
+
 }
-.icon-fb svg, .icon-yt svg, .icon-mail svg{
+.icon-fb svg, .icon-yt svg, .icon-line svg,.icon-shop svg, .icon-mail svg{
     margin-right: 12px;
 }
 /* .footer-item svg{
@@ -54,12 +54,12 @@ footer{
     .footer-item{
         display: flex;
         justify-content: space-between;
-    } 
-     .icon-fb , .icon-yt, .icon-mail{
-    
+    }
+     .icon-fb , .icon-yt, .icon-line,.icon-shop, .icon-mail{
+
         text-align: center;
     }
-   
+
     .footer-logo{
         align-self: end;
     }
@@ -67,15 +67,15 @@ footer{
         text-align: right;
         font-size: 14px;
         display: inline;
-   
+
     }
-    .icon-fb svg, .icon-yt svg, .icon-mail svg{
+    .icon-fb svg, .icon-yt svg, .icon-line svg,.icon-shop svg, .icon-mail svg{
         width: 30px;
         height: 30px;
     }
     .footer-txt span{
         font-size: 16px;
-    }   
+    }
 
 }
 @media screen and (min-width:1024px){
@@ -86,28 +86,28 @@ footer{
     .footer-item{
         display: flex;
         justify-content: space-between;
-    } 
+    }
     .footer-item h4{
         font-size: 32px;
     }
-    .icon-fb , .icon-yt, .icon-mail{
-    
+    .icon-fb , .icon-yt, .icon-line,.icon-shop, .icon-mail{
+
         text-align: center;
     }
-    .icon-fb svg, .icon-yt svg, .icon-mail svg{
+    .icon-fb svg, .icon-yt svg, .icon-line svg,.icon-shop svg, .icon-mail svg{
         width: 40px;
         height: 40px;
     }
-    .icon-fb span, .icon-yt span, .icon-mail span{
+    .icon-fb span, .icon-yt span, .icon-line span,.icon-shop span, .icon-mail span{
         font-size: 19px;
     }
-   
+
     .footer-logo{
         align-self: end;
     }
     .footer-logo p{
         text-align: right;
-   
+
     }
     .footer-txt span{
         font-size: 24px;

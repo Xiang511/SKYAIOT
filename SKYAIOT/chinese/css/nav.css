@@ -18,6 +18,7 @@ header{
     padding: 15px 200px;
     transition: .5s ease;
     background: rgba(0, 0,0,1);
+    
 }
 header .brand{
     color: #fff;

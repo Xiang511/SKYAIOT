@@ -66,17 +66,7 @@ img{
 .sec-item .pic img{
 
 }
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 2s ease;
-}
-  
-.reveal.active{
-    transform: translateY(0px);
-    opacity: 1;
-}
+
 .txt a:hover{
     color: #09a6d4;
     transition: .1s ease;

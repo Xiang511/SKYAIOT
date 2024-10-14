@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box  ;
-}
 .bookBtn a{
     text-decoration: none;
     color: #FFF;
@@ -30,19 +25,19 @@
     width: 100%;    
 }
 .main-container .first{
-    background-image: url('../img/7.png');
+    background-image: url('../img/AnyConv.com__successful1.webp');
     background-repeat: no-repeat;
 }
 .main-container .second{
-    background-image: url('../img/8.png');
+    background-image: url('../img/AnyConv.com__successful2.webp');
     background-repeat: no-repeat;
 }
 .main-container .third{
-    background-image: url('../img/9.png');
+    background-image: url('../img/AnyConv.com__successful3.webp');
     background-repeat: no-repeat;
 }
 .main-container .four{
-    background-image: url('../img/16.png');
+    background-image: url('../img/AnyConv.com__successful4.webp');;
     background-repeat: no-repeat;
 }
 .main-container .content{

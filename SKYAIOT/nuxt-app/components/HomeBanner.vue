@@ -1,4 +1,10 @@
 <script setup>
+import nav from '~/assets/js/nav';
+
+onMounted(() => {
+  nav();
+});
+
 </script>
 <template>
   <section class="home">
@@ -8,35 +14,31 @@
         <img class="img-slide" src="/img/AnyConv.com__banner4.webp">
 
         <div class="content active">
-            <h1>SKY</h1>
-            <span>AIOT</span>
+            <h1>SKY</h1><span>AIOT</span>
             <p></p>
 
         </div>
         <div class="content">
-            <h1>SKY</h1>
-            <span>AIOT</span>
-
-            <p></p>
-
-        </div>
-        <div class="content">
-            <h1>SKY</h1>
-            <span>AIOT</span>
+            <h1>SKY</h1><span>AIOT</span>
 
             <p></p>
 
         </div>
         <div class="content">
-            <h1>SKY</h1>
-            <span>AIOT</span>
+            <h1>SKY</h1><span>AIOT</span>
+
+            <p></p>
+
+        </div>
+        <div class="content">
+            <h1>SKY</h1><span>AIOT</span>
 
             <p></p>
 
         </div>
         <div class="media-icons">
-            <a href="https://www.facebook.com/skyaiot/"><i class="fa fa-facebook-f" style="margin-left: 4px;"></i></a>
-            <a href="https://www.youtube.com/@user-rg9jl5rj8g"><i class="fa fa-youtube-play"></i></a>
+            <!-- <a href="https://www.facebook.com/skyaiot/"><i class="fa fa-facebook-f" style="margin-left: 4px;"></i></a>
+            <a href="https://www.youtube.com/@user-rg9jl5rj8g"><i class="fa fa-youtube-play"></i></a> -->
             <a href="https://linevoom.line.me/user/_dZ3hgZKU8vHl-irHvqTKwbgMZUwfQ4ACHDLnj_8"><i class="fa-brands fa-line"></i></a>
             <a href="https://shopee.tw/sky_village_aiot"><i class="fa-solid fa-cart-shopping"></i></a>
             <address>

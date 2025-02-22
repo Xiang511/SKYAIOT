@@ -1,10 +1,33 @@
-<script setup></script>
+<script setup>
+useHead({
+  link: [
+    {
+      rel: "stylesheet",
+      href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/font-awesome.min.css",
+    },
+    {
+      rel: "stylesheet",
+      href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css",
+    },
+
+    {
+      rel: "stylesheet",
+      href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css",
+    },
+  ],
+});
+</script>
 
 <template>
   <div>
-    <HomeHeader/>
-    <HomeBanner/>
-    <MainFooter/>
+    <header>
+      <HomeHeader />
+      <HomeBanner />
+    </header>
+    <main></main>
+    <footer>
+      <MainFooter />
+    </footer>
   </div>
 </template>
 

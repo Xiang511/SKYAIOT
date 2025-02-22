@@ -1,169 +1,61 @@
 <script setup>
-import nav from '../assets/js/nav.js';
-
-onMounted(() => {
-  nav();
-});
 </script>
-
 <template>
-  <header>
-    <nuxt-link to="/" class="brand"
-      ><img
-        src="/img/logo.png"
-        style="width: 35px; height: 35px; margin-right: 6px"
-        alt=""
-      />SKY AIOT</nuxt-link>
-    <div class="menu-btn">
-      <div class="navigation">
-        <div class="navigation-items">
+  <section class="home">
+        <img class="img-slide active" src="/img/AnyConv.com__banner1.webp">
+        <img class="img-slide" src="/img/banner2.jfif">
+        <img class="img-slide" src="/img/AnyConv.com__banner3.webp">
+        <img class="img-slide" src="/img/AnyConv.com__banner4.webp">
 
-            <nuxt-link to="/">Home</nuxt-link>
-            <nuxt-link to="/Intelligent" class="hide">Intelligent Domains</nuxt-link>
+        <div class="content active">
+            <h1>SKY</h1>
+            <span>AIOT</span>
+            <p></p>
 
-            <ul class="dropdown">
-            <li>
-              <nuxt-link to="/Intelligent" id="ab">Intelligent Domains</nuxt-link>
-            </li>
-            </ul>
-
-            <nuxt-link to="/patents">Patents</nuxt-link>
-            <nuxt-link to="/product">Products</nuxt-link>
-            <nuxt-link to="/successfulstory">Successful Stories</nuxt-link>
-            <nuxt-link to="/aboutus">About Us</nuxt-link>
-            <nuxt-link id="global" to="/chinese"
-            ><img
-              src="/img/worlwide-global-svgrepo-com.svg"
-              style="width: 16px; height: 16px; color: #fff; margin-left: 4px"
-            /></nuxt-link>
         </div>
-      </div>
-    </div>
-  </header>
+        <div class="content">
+            <h1>SKY</h1>
+            <span>AIOT</span>
+
+            <p></p>
+
+        </div>
+        <div class="content">
+            <h1>SKY</h1>
+            <span>AIOT</span>
+
+            <p></p>
+
+        </div>
+        <div class="content">
+            <h1>SKY</h1>
+            <span>AIOT</span>
+
+            <p></p>
+
+        </div>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/skyaiot/"><i class="fa fa-facebook-f" style="margin-left: 4px;"></i></a>
+            <a href="https://www.youtube.com/@user-rg9jl5rj8g"><i class="fa fa-youtube-play"></i></a>
+            <a href="https://linevoom.line.me/user/_dZ3hgZKU8vHl-irHvqTKwbgMZUwfQ4ACHDLnj_8"><i class="fa-brands fa-line"></i></a>
+            <a href="https://shopee.tw/sky_village_aiot"><i class="fa-solid fa-cart-shopping"></i></a>
+            <address>
+                <a href="mailto:aiot@skyvillagecoffee.com"><i class="fa fa-envelope"></i></a>
+            </address>
+
+
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn" id="nav-button2"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+
+    </section>
 </template>
-
 <style scoped>
-/* <!-- 下拉式表單 -- > */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
 
-.dropdown-submenu {
-  position: absolute;
-  display: none;
-  background-color: #000;
-  right: -1px;
-  width: 90%;
-}
-
-.dropdown-submenu li {
-  display: block;
-  box-sizing: border-box;
-  padding: 5px;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-.dropdown-submenu li:first-child {
-  margin-top: 20px;
-}
-.dropdown .dropdown-submenu li > a {
-  margin: 8px;
-}
-
-.dropdown-submenu a {
-  color: #fff;
-  text-align: right;
-}
-
-.dropdown:hover .dropdown-submenu {
-  display: block;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-img{
-  vertical-align: middle;
-}
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 1s ease;
-}
-
-.reveal.active {
-  transform: translateY(0px);
-  opacity: 1;
-}
-header {
-  z-index: 999;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 200px;
-  transition: 0.5s ease;
-  background: rgba(0, 0, 0, 1);
-}
-header .brand {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-header .brand:hover {
-  color: #09a6d4;
-}
-header .navigation {
-  position: relative;
-}
-header .navigation .navigation-items a {
-  position: relative;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 500;
-  text-decoration: none;
-  margin-left: 30px;
-  transition: 0.3s ease;
-}
-#ab {
-  position: relative;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 500;
-  text-decoration: none;
-  margin-left: 30px;
-  transition: 0.3s ease;
-}
-.hide {
-  display: none;
-}
-.hide2 {
-  display: none;
-}
-header .navigation .navigation-items a:before {
-  content: "";
-  position: absolute;
-  color: #fff;
-  width: 0;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  transition: 0.3s ease;
-}
-header .navigation .navigation-items a:hover:before {
-  width: 100%;
-  background-color: #09a6d4;
-}
 section.home {
   padding: 100px 200px;
 }

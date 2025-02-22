@@ -3,7 +3,7 @@
 <template>
   <div>
     <HomeHeader/>
-    
+    <HomeBanner/>
     <MainFooter/>
   </div>
 </template>

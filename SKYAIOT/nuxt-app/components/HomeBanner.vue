@@ -1,63 +1,61 @@
 <script setup>
-import nav from '~/public/js/nav';
+import nav from "~/public/js/nav";
 
 onMounted(() => {
   nav();
 });
-
 </script>
 <template>
   <section class="home">
-        <img class="img-slide active" src="/img/AnyConv.com__banner1.webp">
-        <img class="img-slide" src="/img/banner2.jfif">
-        <img class="img-slide" src="/img/AnyConv.com__banner3.webp">
-        <img class="img-slide" src="/img/AnyConv.com__banner4.webp">
+    <img class="img-slide active" src="/img/AnyConv.com__banner1.webp" />
+    <img class="img-slide" src="/img/banner2.jfif" />
+    <img class="img-slide" src="/img/AnyConv.com__banner3.webp" />
+    <img class="img-slide" src="/img/AnyConv.com__banner4.webp" />
 
-        <div class="content active">
-            <h1>SKY</h1><span>AIOT</span>
-            <p></p>
+    <div class="content active">
+      <h1>SKY AIOT</h1>
+      <p></p>
+    </div>
+    <div class="content">
+      <h1>SKY AIOT</h1>
 
-        </div>
-        <div class="content">
-            <h1>SKY</h1><span>AIOT</span>
+      <p></p>
+    </div>
+    <div class="content">
+      <h1>SKY AIOT</h1>
 
-            <p></p>
+      <p></p>
+    </div>
+    <div class="content">
+      <h1>SKY AIOT</h1>
 
-        </div>
-        <div class="content">
-            <h1>SKY</h1><span>AIOT</span>
-
-            <p></p>
-
-        </div>
-        <div class="content">
-            <h1>SKY</h1><span>AIOT</span>
-
-            <p></p>
-
-        </div>
-        <div class="media-icons">
-            <!-- <a href="https://www.facebook.com/skyaiot/"><i class="fa fa-facebook-f" style="margin-left: 4px;"></i></a>
-            <a href="https://www.youtube.com/@user-rg9jl5rj8g"><i class="fa fa-youtube-play"></i></a> -->
-            <a href="https://linevoom.line.me/user/_dZ3hgZKU8vHl-irHvqTKwbgMZUwfQ4ACHDLnj_8"><i class="fa-brands fa-line"></i></a>
-            <a href="https://shopee.tw/sky_village_aiot"><i class="fa-solid fa-cart-shopping"></i></a>
-            <address>
-                <a href="mailto:aiot@skyvillagecoffee.com"><i class="fa fa-envelope"></i></a>
-            </address>
-
-
-        </div>
-        <div class="slider-navigation">
-            <div class="nav-btn active"></div>
-            <div class="nav-btn" id="nav-button2"></div>
-            <div class="nav-btn"></div>
-            <div class="nav-btn"></div>
-        </div>
-
-    </section>
+      <p></p>
+    </div>
+    <div class="media-icons">
+      <a href="https://www.facebook.com/skyaiot/"><i class="fa fa-facebook-f" style="margin-left: 4px;"></i></a>
+            <a href="https://www.youtube.com/@user-rg9jl5rj8g"><i class="fa fa-youtube-play"></i></a>
+      <a
+        href="https://linevoom.line.me/user/_dZ3hgZKU8vHl-irHvqTKwbgMZUwfQ4ACHDLnj_8"
+        ><i class="fa-brands fa-line"></i
+      ></a>
+      <a href="https://shopee.tw/sky_village_aiot"
+        ><i class="fa-solid fa-cart-shopping"></i
+      ></a>
+      <address>
+        <a href="mailto:aiot@skyvillagecoffee.com"
+          ><i class="fa fa-envelope"></i
+        ></a>
+      </address>
+    </div>
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn" id="nav-button2"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+  </section>
 </template>
 <style scoped>
-
 section.home {
   padding: 100px 200px;
 }

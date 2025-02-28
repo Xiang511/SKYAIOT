@@ -1,5 +1,5 @@
 <script setup>
-import nav from '~/assets/js/nav';
+import nav from '~/public/js/nav';
 
 onMounted(() => {
   nav();

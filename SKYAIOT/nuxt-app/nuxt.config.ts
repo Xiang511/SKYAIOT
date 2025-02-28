@@ -3,6 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: [
-    '~/public/css/global.css'
+    '~/public/css/global.css',
+    'bootstrap/dist/css/bootstrap.min.css'
   ]
+  
 })

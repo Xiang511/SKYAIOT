@@ -16,14 +16,14 @@ footer{
     color: #FFF;
 }
 .footer-item a:hover, .footer-txt a:hover{
-    color: #09a6d4;
+    color: rgb(237, 193, 122);
 }
 .icon-fb , .icon-yt, .icon-line,.icon-shop, .icon-mail{
     margin-bottom: 8px;
 }
 .icon-fb a:hover svg, .icon-yt a:hover svg, .icon-line a:hover svg, .icon-shop a:hover svg, .icon-mail a:hover svg{
     transform: scale(1.2);
-    color: #09a6d4;
+    color: rgb(237, 193, 122);
 
 }
 .icon-fb svg, .icon-yt svg, .icon-line svg,.icon-shop svg, .icon-mail svg{

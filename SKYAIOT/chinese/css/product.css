@@ -159,7 +159,6 @@ button{
     }
     #re{
         display: flex;
-        flex-direction: row-reverse;
         justify-content: center;
     }
     .sec-item .pic img{

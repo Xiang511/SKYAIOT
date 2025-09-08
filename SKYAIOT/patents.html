@@ -10,6 +10,7 @@
   <title>Sky AIOT</title>
 
   <link rel="icon" type="image/x-icon" href="img/logo.png" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/patents.css">
@@ -87,6 +88,12 @@
       padding: 0;
       margin: 0;
     }
+    img {
+      display: inline !important;
+    }
+    .mx-auto{
+      margin: 2em auto !important;
+    }
   </style>
 
 </head>
@@ -124,6 +131,45 @@
 
 
   <div class="wrap">
+     <div class="mx-auto my-1 max-w-7xl px-6 lg:px-8 relative overflow-hidden">
+      <!-- 背景特效：柔和漸層圓形（加入移動動畫） -->
+      <div id="bg-circle-1" style="position:absolute;top:-80px;left:-80px;width:300px;height:300px;background:radial-gradient(circle at 40% 40%, #a7f3d0 0%, #f0fdf4 80%);opacity:0.5;z-index:0;border-radius:50%; transition: all 2s cubic-bezier(.4,0,.2,1);"></div>
+      <div id="bg-circle-2" style="position:absolute;bottom:-100px;right:-100px;width:350px;height:350px;background:radial-gradient(circle at 60% 60%, #93c5fd 0%, #f0f9ff 80%);opacity:0.4;z-index:0;border-radius:50%; transition: all 2s cubic-bezier(.4,0,.2,1);"></div>
+      <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3 relative z-10">
+      <div class="mx-auto flex flex-col gap-y-4">
+        <dt class="text-base/7 text-gray-600">Total patents</dt>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">12</dd>
+      </div>
+      <div class="mx-auto flex flex-col gap-y-4">
+        <dt class="text-base/7 text-gray-600">Invention Patent</dt>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">6</dd>
+      </div>
+      <div class="mx-auto flex flex-col gap-y-4">
+        <dt class="text-base/7 text-gray-600">Utility patents</dt>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">6</dd>
+      </div>
+      </dl>
+      <script>
+      // 背景圓形移動動畫
+      function animateCircles() {
+        const c1 = document.getElementById('bg-circle-1');
+        const c2 = document.getElementById('bg-circle-2');
+        if (!c1 || !c2) return;
+        c1.style.top = '-60px';
+        c1.style.left = '-60px';
+        c2.style.bottom = '-120px';
+        c2.style.right = '-120px';
+        setTimeout(() => {
+        c1.style.top = '-100px';
+        c1.style.left = '-100px';
+        c2.style.bottom = '-80px';
+        c2.style.right = '-80px';
+        }, 2000);
+      }
+      setInterval(animateCircles, 4000);
+      animateCircles();
+      </script>
+    </div>
     <section class="sec">
       <div class="sec-item">
         <div class="txt">

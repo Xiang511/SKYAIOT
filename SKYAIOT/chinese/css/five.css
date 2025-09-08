@@ -1,6 +1,7 @@
 .wrapper{
   max-width: 1400px;
   padding: 6px;
+  margin: auto;
 }
 .gallery{
   display: flex;
@@ -8,7 +9,7 @@
 }
 .gallery .image{
   padding: 7px;
-  width: calc(100% / 3);
+  width: calc(100% / 2);
 }
 .gallery .image span{
   display: flex;

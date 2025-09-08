@@ -145,7 +145,7 @@ section.home{
     border-radius: 2px;
 }
 #global::after{
-    content: "Chinese";
+    content: "English";
     margin-left: .5em;
     margin-top: 2px;
     
@@ -274,7 +274,7 @@ section.home{
         box-shadow: 0 5px 25px rgb(1 1 1/ 20%);
     }
     .menu-btn{
-        background:url(../img/hicon.svg)no-repeat;
+        background:url(../../img/hicon.svg)no-repeat;
         background-size: 30px;
         background-position: center;
         width: 40px;
@@ -284,7 +284,7 @@ section.home{
     }
     .menu-btn.active{
         z-index: 999;
-        background:url(../img/close.png)no-repeat;
+        background:url(../../img/close.png)no-repeat;
         background-size: 25px;
         background-position: center;
         transition: 0.3s ease;
